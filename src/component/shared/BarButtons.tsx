@@ -8,7 +8,7 @@ export let inernalCahe: Record<string, MoviesMapper[]>={};
 export const BarButtons = ({ sendQuery }: Prop) => {
     
 
-    const querys = ['Amor', 'Accion','romance','comedia','Terror']
+    const querys = ['Amor', 'Accion','romance']
     
 
 
