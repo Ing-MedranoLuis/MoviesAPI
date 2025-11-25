@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Elms Sans", sans-serif;
+  text-decoration: none;
+}
+header {
+  height: 200px;
+  background-image: url("https://images.alphacoders.com/487/thumb-1920-487496.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ccontainer {
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  padding: 30px;
+  justify-content: center;
+}
+.sub-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.moveiesCard {
+  width: 15%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px 30px 0 0;
+  margin: 1%;
+
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 5px 10px 20px 0px rgb(134, 134, 134);
+  position: relative;
+}
+
+.divBoddy {
+  z-index: 2;
+  padding: 20px;
+  height: auto;
+
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgb(0, 0, 0);
+  transition: all 0.5s ease;
+}
+
+.divBoddy:hover {
+  transform: translateY(-10px);
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease;
+}
+.divSearchBar {
+  padding: 0px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.divSearchBar div {
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 40%;
+}
+.divSearchBar input {
+  border: none;
+  padding: 10px;
+  outline: none;
+  color: none;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.divSearchBar a {
+  padding: 10px;
+  border: none;
+  color: black;
+  font-weight: 900;
+}
+.divSearchBar a i {
+  padding: 10px;
+  border: none;
+  color: black;
+  width: 10%;
+  cursor: pointer;
+}
+.imgCard {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.barDivButton ul {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.barDivButton ul li {
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+  font-family: "Elms Sans", sans-serif;
+  font-weight: 700;
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  transition: all 0.5s ease;
+}
+.barDivButton ul li:hover {
+  color: rgba(255, 0, 0, 1);
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  border-bottom: 2px solid rgba(255, 0, 0, 0.8);
+}
+footer {
+  background-color: rgba(0, 0, 0, 1);
+  height: 400px;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .moveiesCard {
+    width: 48%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease;
+  }
+  .divBoddy {
+    z-index: 2;
+    padding: 20px;
+    height: auto;
+
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    font-size: 10px;
+  }
+
+  .divBoddy:hover {
+    transform: translateY(-10px);
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s ease;
+  }
+  .divSearchBar {
+    padding: 0px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .divSearchBar div {
+    border: 3px solid rgb(0, 0, 0);
+    width: 80%;
+    display: flex;
+  }
+  .divSearchBar input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    color: none;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .divSearchBar a {
+    padding: 10px;
+    border: none;
+    color: none;
+  }
+  .divSearchBar a i {
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0) d;
+    color: rgb(0, 0, 0);
+    width: 10%;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}
