@@ -16,7 +16,7 @@ export const BarButtons = ({ sendQuery }: Prop) => {
       <div className="barDivButton">
           <ul>
               {querys.map((value, index) => (
-                  <li className="liBar" onClick={()=>sendQuery(value)} value={value} key={index}>{ value}</li>
+                  <li className="liBar" onClick={()=>sendQuery(value)} value={value} key={index}>{ value.toLocaleUpperCase()}</li>
 
 
               )) }
